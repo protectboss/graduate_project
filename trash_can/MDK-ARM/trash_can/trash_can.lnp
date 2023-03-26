@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"trash_can\startup_stm32f103x6.o"
+"trash_can\ultrasonic.o"
+"trash_can\main.o"
+"trash_can\gpio.o"
+"trash_can\tim.o"
+"trash_can\stm32f1xx_it.o"
+"trash_can\stm32f1xx_hal_msp.o"
+"trash_can\stm32f1xx_hal_gpio_ex.o"
+"trash_can\stm32f1xx_hal_tim.o"
+"trash_can\stm32f1xx_hal_tim_ex.o"
+"trash_can\stm32f1xx_hal.o"
+"trash_can\stm32f1xx_hal_rcc.o"
+"trash_can\stm32f1xx_hal_rcc_ex.o"
+"trash_can\stm32f1xx_hal_gpio.o"
+"trash_can\stm32f1xx_hal_dma.o"
+"trash_can\stm32f1xx_hal_cortex.o"
+"trash_can\stm32f1xx_hal_pwr.o"
+"trash_can\stm32f1xx_hal_flash.o"
+"trash_can\stm32f1xx_hal_flash_ex.o"
+"trash_can\stm32f1xx_hal_exti.o"
+"trash_can\system_stm32f1xx.o"
+--strict --scatter "trash_can\trash_can.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "trash_can.map" -o trash_can\trash_can.axf

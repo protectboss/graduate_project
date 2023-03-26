@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"temperature_pillow\startup_stm32f103x6.o"
+"temperature_pillow\main.o"
+"temperature_pillow\gpio.o"
+"temperature_pillow\stm32f1xx_it.o"
+"temperature_pillow\stm32f1xx_hal_msp.o"
+"temperature_pillow\stm32f1xx_hal_gpio_ex.o"
+"temperature_pillow\stm32f1xx_hal_tim.o"
+"temperature_pillow\stm32f1xx_hal_tim_ex.o"
+"temperature_pillow\stm32f1xx_hal.o"
+"temperature_pillow\stm32f1xx_hal_rcc.o"
+"temperature_pillow\stm32f1xx_hal_rcc_ex.o"
+"temperature_pillow\stm32f1xx_hal_gpio.o"
+"temperature_pillow\stm32f1xx_hal_dma.o"
+"temperature_pillow\stm32f1xx_hal_cortex.o"
+"temperature_pillow\stm32f1xx_hal_pwr.o"
+"temperature_pillow\stm32f1xx_hal_flash.o"
+"temperature_pillow\stm32f1xx_hal_flash_ex.o"
+"temperature_pillow\stm32f1xx_hal_exti.o"
+"temperature_pillow\system_stm32f1xx.o"
+--strict --scatter "Temperature_Pillow\Temperature_Pillow.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Temperature_Pillow.map" -o Temperature_Pillow\Temperature_Pillow.axf
